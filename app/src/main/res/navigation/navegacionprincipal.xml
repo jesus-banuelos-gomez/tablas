@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacionprincipal"
+    app:startDestination="@id/home_Fragment">
+    <fragment
+        android:id="@+id/home_Fragment"
+        android:name="com.example.tablas.home_Fragment"
+        android:label="fragment_home_"
+        tools:layout="@layout/fragment_home_" >
+        <action
+            android:id="@+id/action_home_Fragment_to_principiante_Fragment"
+            app:destination="@id/principiante_Fragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_fragment_intermedio"
+            app:destination="@id/fragment_intermedio" />
+    </fragment>
+    <fragment
+        android:id="@+id/principiante_Fragment"
+        android:name="com.example.tablas.principiante_Fragment"
+        android:label="fragment_principiante_"
+        tools:layout="@layout/fragment_principiante_" >
+        <action
+            android:id="@+id/action_principiante_Fragment_to_home_Fragment"
+            app:destination="@id/home_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_intermedio"
+        android:name="com.example.tablas.Fragment_intermedio"
+        android:label="fragment_intermedio"
+        tools:layout="@layout/fragment_intermedio" >
+        <action
+            android:id="@+id/action_fragment_intermedio_to_home_Fragment"
+            app:destination="@id/home_Fragment" />
+    </fragment>
+</navigation>
