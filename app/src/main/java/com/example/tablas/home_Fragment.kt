@@ -11,7 +11,9 @@ import androidx.navigation.fragment.findNavController
 
 class home_Fragment : Fragment() {
 
-    lateinit var boton:Button
+    lateinit var botonPrincipiante:Button
+    lateinit var botonIntermedio:Button
+    lateinit var botonDificil:Button
 
 
     override fun onCreateView(
@@ -22,10 +24,18 @@ class home_Fragment : Fragment() {
 
 
         val vista = inflater.inflate(R.layout.fragment_home_, container, false)
-        boton = vista.findViewById(R.id.btnPrincipiante)
-        boton.setOnClickListener {
+
+        botonPrincipiante = vista.findViewById(R.id.btnPrincipiante)
+        botonPrincipiante.setOnClickListener {
             findNavController().navigate(R.id.action_home_Fragment_to_principiante_Fragment)
         }
+
+        botonIntermedio = vista.findViewById(R.id.btnHomeIntermedio)
+        botonIntermedio.setOnClickListener {
+            findNavController().navigate(R.id.action_home_Fragment_to_fragment_intermedio)
+        }
+
+
         return vista
     }
 }
