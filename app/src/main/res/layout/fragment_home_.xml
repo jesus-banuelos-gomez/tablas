@@ -6,33 +6,32 @@
     tools:context=".home_Fragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="hello_blank_fragment home" />
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnPrincipiante"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="200dp"
-        android:text="Principiante" />
+        <Button
+            android:id="@+id/btnPrincipiante"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Principiante" />
 
-    <Button
-        android:id="@+id/btnHomeIntermedio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="250dp"
-        android:text="Intermedio" />
+        <Button
+            android:id="@+id/btnHomeIntermedio"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
 
-    <Button
-        android:id="@+id/btnHomeDificil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="300dp"
-        android:text="Dificil" />
+            android:text="Intermedio" />
+
+        <Button
+            android:id="@+id/btnHomeDificil"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:text="Dificil" />
+    </LinearLayout>
 
 </FrameLayout>

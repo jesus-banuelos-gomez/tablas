@@ -35,6 +35,11 @@ class home_Fragment : Fragment() {
             findNavController().navigate(R.id.action_home_Fragment_to_fragment_intermedio)
         }
 
+        botonDificil = vista.findViewById(R.id.btnHomeDificil)
+        botonDificil.setOnClickListener {
+            findNavController().navigate(R.id.action_home_Fragment_to_fragment_dificil)
+        }
+
 
         return vista
     }

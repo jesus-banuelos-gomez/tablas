@@ -20,9 +20,9 @@ class Fragment_dificil : Fragment() {
         // Inflate the layout for this fragment
 
         val vista = inflater.inflate(R.layout.fragment_dificil, container, false)
-        boton = vista.findViewById(R.id.btnIntermedioHome)
+        boton = vista.findViewById(R.id.btnDificilHome)
         boton.setOnClickListener {
-            findNavController().navigate(R.id.action_fragment_intermedio_to_home_Fragment)
+            findNavController().navigate(R.id.action_fragment_dificil_to_home_Fragment)
         }
         return vista
     }

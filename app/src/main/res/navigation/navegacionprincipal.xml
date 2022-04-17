@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_home_Fragment_to_fragment_intermedio"
             app:destination="@id/fragment_intermedio" />
+        <action
+            android:id="@+id/action_home_Fragment_to_fragment_dificil"
+            app:destination="@id/fragment_dificil" />
     </fragment>
     <fragment
         android:id="@+id/principiante_Fragment"
@@ -32,6 +35,15 @@
         tools:layout="@layout/fragment_intermedio" >
         <action
             android:id="@+id/action_fragment_intermedio_to_home_Fragment"
+            app:destination="@id/home_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_dificil"
+        android:name="com.example.tablas.Fragment_dificil"
+        android:label="fragment_dificil"
+        tools:layout="@layout/fragment_dificil" >
+        <action
+            android:id="@+id/action_fragment_dificil_to_home_Fragment"
             app:destination="@id/home_Fragment" />
     </fragment>
 </navigation>
